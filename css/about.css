@@ -1,0 +1,72 @@
+/* !! úkol - do budoucna předělat do sass
+Colours:
+main-green: #72A603
+dark-green: #1D5902
+light-green: #CDF27E
+backgroud: #F2ECE4
+
+!!! úkol - do budoucna najít vhodné fonty
+ */
+
+.about {
+    text-align: center;
+    padding: 1em 2em;
+    font-size: 18px;
+}
+
+h1, h3 {
+    color: #1D5902;
+}
+
+h2, h4{
+    text-align: left;
+    margin-bottom: 10px;
+}
+ul{
+    text-align: left;
+}
+
+.flex1
+.flex2 {
+    margin: 2em 0px;
+}
+
+/* media query */
+@media (min-width: 650px){
+    .flex2 {
+        display: flex;
+    }
+
+    .flex2 div{
+        flex-grow: 1;
+    }
+
+    /*.flex2:first-child {
+        padding: 20px;
+    }*/
+
+    .social {
+        width: 40%;
+        padding: 15px 30%;
+    }
+}
+
+@media (min-width:950px){
+    .flex1 {
+        display: flex;
+    }
+
+    .flex1_item {
+        flex-grow: 1;
+        flex-basis: calc(100%/3);
+    }
+
+    h1, h3{
+        padding: 5% 0;
+    }
+
+    .text, h4{
+        font-size: 1.2em;
+        padding: 0 10%;
+    }
+}

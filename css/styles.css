@@ -1,0 +1,113 @@
+/* !! úkol - do budoucna předělat do sass
+Colours:
+main-green: #72A603
+dark-green: #1D5902
+light-green: #CDF27E
+backgroud: #F2ECE4
+
+!!! úkol - do budoucna najít vhodné fonty
+ */
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F2ECE4;
+    color: black;
+}
+
+.profile_picture img {
+    border-radius: 50%;
+    width: 32%;
+    padding: 20px 34%;
+}
+
+.content{
+    text-align: center;
+}
+
+.text {
+    padding: 5px 20px;
+}
+
+.button{
+    display: block;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 8px 10px;
+    background-color: #72A603;
+    border-radius: 20px;
+    width: 150px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    box-shadow: gray 1px 2px;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: #1D5902;
+}
+
+.social {
+    width: 20%;
+    display: flex;
+    padding: 15px 40%;
+}
+.socialitem{
+    padding: 5px;
+    flex-grow: 1;
+}
+
+.socialitem img {
+    width: 25px;
+}
+
+.envelope img{
+    padding-top: 3px;
+}
+
+/* media query */
+@media (min-width:900px) {
+    .main {
+        display: flex;
+        height: 60vh;
+        padding: 55px 20px;
+    }
+
+    .profile_picture{
+        flex-basis: 35%;
+    }
+
+    .profile_picture img {
+        width: 50%;
+        padding: 5% 25%;
+    }
+
+    .content{
+        flex-basis: 65%;
+    }
+
+    .content h3 {
+        font-size: 1.5rem;
+    }
+
+    .content .text{
+    font-size: 1.2rem;
+    }
+
+    .button{
+        width: 200px; /* */
+        font-size: 1.2rem;
+    }
+    .social {
+        /*width: 20%;*/
+        display: flex;
+        padding: 15px auto;
+    }
+
+    .socialitem img {
+        width: 35px;
+    }
+}
+

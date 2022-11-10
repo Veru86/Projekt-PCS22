@@ -1,0 +1,24 @@
+/*Footer*/
+footer{
+  font-size: 14px;
+  text-align: center;
+  background-color: #1D5902;
+  color: white;
+  padding: 1%;
+  display: flex;
+}
+
+footer div {
+  flex-basis: 85%;
+  margin-top: 8px;
+}
+
+.footer_a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+  background-color: #72A603;
+  border-radius: 5px;
+  flex-basis: 15%;
+}

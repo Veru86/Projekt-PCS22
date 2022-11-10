@@ -1,0 +1,51 @@
+Funkční požadavky (user stories)
+    - Makléř
+        - přihlásit
+            - local account
+        - ? register
+        - zobrazit si seznam nemovitostí
+            - filtrování podle: ceny (od-do), lokace (singleselect), velikosti (multiselect)
+            - řazení podle (asc/desc): ceny
+            - 
+        - zobrazit detail nemovitosti
+            ....
+        - upravit nemovitost
+        - smazat nemovitost
+        - přidat nemovitost
+            - cenu
+            - lokaci - 
+            - velikost - 
+            - ...
+            - veřejné nebo ne
+        --------------
+        - analýza počtu návštěv
+    - Návštěvníka (anonymní)
+        - .....
+        -------
+
+sitemap
+    - přihlášení
+    - o mně
+    - kontakt
+    - seznam nemovitostí
+
+
+ERD (tabulky)
+    - users
+        - jméno
+        - přijmení
+        - heslo
+    - real estates
+        - název
+	    - lokace
+	    - rozloha/velikost
+	
+
+Q&A
+    - máme aplikaci zveřejnit venku na nějakém hostingu?
+        ...
+
+Nefnkční požadavky (technické)
+    - (/) více stránek
+    - (/) validace klient + validace server
+    - ....

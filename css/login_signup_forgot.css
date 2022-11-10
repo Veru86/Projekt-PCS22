@@ -1,0 +1,45 @@
+/*
+Colours:
+main-green: #72A603
+dark-green: #1D5902
+light-green: #CDF27E
+backgroud: #F2ECE4
+ */
+
+.login_signup_forgot  {
+    width: 300px;
+    padding: 15px auto;
+    margin: 10% 35%;
+    background-color: #CDF27E;
+    border-radius: 15px;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login_signup_forgot h3 {
+    margin-top: 0;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login_signup_forgot a {
+    text-decoration: none;
+    color: black;
+    padding:5px;
+    border: solid #1D5902 1px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.login_signup_forgot a:hover,
+.login_signup_forgot a:focus,
+.login_signup_forgotm a:active {
+    background-color: #1D5902;
+    color: white;
+}
