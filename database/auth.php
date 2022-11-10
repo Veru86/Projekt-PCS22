@@ -28,7 +28,7 @@ class Auth implements IAuth
         return $user["Id"];
     }
 
-    //nejspíš tuto funkci nepotřebuji
+    //nejspíš tuto funkci nepotřebuji - možno využít v případě více uživatelů
     public function get_user_name(int $userId): string
     {
         $sql = "SELECT * FROM " . self::TABLE_NAME . " WHERE Id = $userId";
