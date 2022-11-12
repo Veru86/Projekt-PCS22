@@ -17,7 +17,7 @@ class Realestates implements IRealestate
 
     public function add_realestate($nadpis, $cena, $lokalita, $typ, $plocha, $popis, $dateAdded, $userId): void
     {
-        $sql = "INSERT INTO " . self::TABLE_NAME . "(Nadpis, Cena, Lokalita, TypNemovitosti, Plocha, Poipis, DateAdded, UserId) VALUES('$nadpis', $cena, '$lokalita', '$typ', $plocha, '$popis','$dateAdded', $userId);";
+        $sql = "INSERT INTO " . self::TABLE_NAME . "(Nadpis, Cena, Lokalita, TypNemovitosti, Plocha, Popis, DateAdded, UserId) VALUES('$nadpis', $cena, '$lokalita', '$typ', $plocha, '$popis','$dateAdded', $userId);";
         if (!$this->connection->query($sql)) {
             throw new Exception("Přidání nové nemovitosti selhalo.");
         }
