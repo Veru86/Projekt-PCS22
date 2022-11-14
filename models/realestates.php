@@ -8,6 +8,7 @@ class Realestate
     public string $typ;
     public int $plocha;
     public string $popis;
+    public string $fileToUpload;
     public string $dateAdded;
     public string $userFullName;
 }

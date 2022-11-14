@@ -15,9 +15,9 @@ class Realestates implements IRealestate
         $this->auth = new Auth($conn);
     }
 
-    public function add_realestate($nadpis, $cena, $lokalita, $typ, $plocha, $popis, $dateAdded, $userId): void
+    public function add_realestate($nadpis, $cena, $lokalita, $typ, $plocha, $popis, $fileToUpload, $dateAdded, $userId): void
     {
-        $sql = "INSERT INTO " . self::TABLE_NAME . "(Nadpis, Cena, Lokalita, TypNemovitosti, Plocha, Popis, DateAdded, UserId) VALUES('$nadpis', $cena, '$lokalita', '$typ', $plocha, '$popis','$dateAdded', $userId);";
+        $sql = "INSERT INTO " . self::TABLE_NAME . "(Nadpis, Cena, Lokalita, TypNemovitosti, Plocha, Popis, fileToUpload, DateAdded, UserId) VALUES('$nadpis', $cena, '$lokalita', '$typ', $plocha, '$popis', '$fileToUpload','$dateAdded', $userId);";
         if (!$this->connection->query($sql)) {
             throw new Exception("Přidání nové nemovitosti selhalo.");
         }
@@ -38,6 +38,7 @@ class Realestates implements IRealestate
             $realestate->typ = $row["TypNemovitosti"];
             $realestate->plocha = $row["Plocha"];
             $realestate->popis = $row["Popis"];
+            $realestate->popis = $row["fileToUpload"];
             $realestate->dateAdded = $row["DateAdded"];
             $realestate->userFullName = $this->auth->get_user_name($row["UserId"]);
             array_push($realestates, $realestate);

@@ -16,6 +16,7 @@ CREATE TABLE Realestates(
     TypNemovitosti VARCHAR(100) NOT NULL,
     Plocha INTEGER NOT NULL,
     Popis VARCHAR(5000) NOT NULL,
+    fileToUpload VARCHAR(100) NOT NULL,
     DateAdded DATETIME NOT NULL,
     UserId INTEGER NOT NULL,
     FOREIGN KEY(UserId) REFERENCES Reality_Kopicova.Users(Id)

@@ -52,8 +52,8 @@ session_start();
                 "<div class='realestate-head'>" .
                 "<h2>$realestate->nadpis</h2>" .
                 "</div>" .
-                "<div class='obr'>" .
-                "</div>" .
+                "<img class='mainFoto' src=./uploads/$realestate->fileToUpload>" .
+                "</img>" .
                 "<div class='info'>" .
                 "<p><b>'Cena: '</b>$$realestate->cena</p>" .
                 "<p><b>'Lokalita: '</b>$$realestate->lokalita</p>" .
@@ -68,7 +68,7 @@ session_start();
         ?>
     </div>
 
-    <!-- <a class="add-post-btn" href="./add_realestate.php">+</a> -->
+
     <?php
     include "footer.php"
     ?>
