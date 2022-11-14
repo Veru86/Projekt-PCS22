@@ -1,19 +1,19 @@
 <?php
 session_start();
 
-require dirname(__FILE__) . "/helpers/check_cookie.php";
-require_once dirname(__FILE__) . "/database/auth.php";
-require dirname(__FILE__) . "/database/db.php";
+// require dirname(__FILE__) . "/helpers/check_cookie.php";
+// require_once dirname(__FILE__) . "/database/auth.php";
+// require dirname(__FILE__) . "/database/db.php";
 
-$auth = new Auth($connection);
+// $auth = new Auth($connection);
 
-if (!isset($_SESSION["email"])) {
-    header("Location: login.php");
-}
+// if (!isset($_SESSION["email"])) {
+//     header("Location: login.php");
+// }
 
-if (!$auth->check_user($_SESSION["email"], $_SESSION["heslo"])) {
-    header("Location: login.php");
-}
+// if (!$auth->check_user($_SESSION["email"], $_SESSION["heslo"])) {
+//     header("Location: login.php");
+// }
 ?>
 
 <!DOCTYPE html>
@@ -33,6 +33,11 @@ if (!$auth->check_user($_SESSION["email"], $_SESSION["heslo"])) {
     <?php
     include "navigation.php"
     ?>
+
+    <?php
+    include "navigation_for_signer.php"
+    ?>
+
     <h1>Nemovitosti v mé nabídce</h1>
     <div class="realestates-wrapper">
         <?php
@@ -63,7 +68,7 @@ if (!$auth->check_user($_SESSION["email"], $_SESSION["heslo"])) {
         ?>
     </div>
 
-    <a class="add-post-btn" href="./add_realestate.php">+</a>
+    <!-- <a class="add-post-btn" href="./add_realestate.php">+</a> -->
     <?php
     include "footer.php"
     ?>
