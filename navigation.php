@@ -9,5 +9,5 @@
     <a href="index.php" class="navitem">Úvod</a>
     <a href="about.php" class="navitem">O mně</a>
     <a href="realestates.php" class="navitem">Nemovitosti</a>
-    <a href="contact.php" class="navitem">Chci prodat/ koupit</a>
+    <a href="contact.php" class="navitem">Kontakt</a>
 </nav>
