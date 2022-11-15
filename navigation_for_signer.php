@@ -17,11 +17,11 @@
     }
     ?>
 
-    <a class="add-post-btn" href="./add_realestate.php">+</a>
+    <a class="add-post-btn myButton" href="./add_realestate.php">+</a>
     <form action="./helpers/logout.php" method="post">
-        <input class="primary-button" type="submit" value="Odhlásit se" name="logout">
+        <input class="myButton" type="submit" value="Odhlásit se" name="logout">
     </form>
     <form action="./helpers/delete_account.php" method="post">
-        <input class="primary-button" type="submit" value="Smazat účet" name="logout">
+        <input class="myButton" type="submit" value="Smazat účet" name="logout">
     </form>
 </nav>
