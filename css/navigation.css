@@ -59,6 +59,10 @@ nav a:active {
     background-color: #1D5902;
 }
 
+.nav_for_signer{
+    background-color: #F2ECE4;
+    border-bottom: gray 1px solid;
+}
 /* media query*/
 @media (min-width:650px){
     /*Header */

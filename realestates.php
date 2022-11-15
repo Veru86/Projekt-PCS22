@@ -26,6 +26,7 @@ session_start();
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/navigation.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/realestates.css">
     <title>Reality Kopicová</title>
 </head>
 
@@ -38,36 +39,38 @@ session_start();
     include "navigation_for_signer.php"
     ?>
 
-    <h1>Nemovitosti v mé nabídce</h1>
-    <div class="realestates-wrapper">
-        <?php
-        require_once dirname(__FILE__) . "/database/db_realestates.php";
-        require dirname(__FILE__) . "/database/db.php";
+    <div class="main">
+        <h1>Nemovitosti v mé nabídce</h1>
+        <div class="realestates-wrapper">
+            <?php
+            require_once dirname(__FILE__) . "/database/db_realestates.php";
+            require dirname(__FILE__) . "/database/db.php";
 
-        $realestateDb = new Realestates($connection);
-        $realestates = $realestateDb->get_all_realestates();
+            $realestateDb = new Realestates($connection);
+            $realestates = $realestateDb->get_all_realestates();
 
-        foreach ($realestates as $realestate) {
-            echo "<div class='realestate'>" .
-                "<div class='realestate-head'>" .
-                "<h2>$realestate->nadpis</h2>" .
-                "</div>" .
-                "<img class='mainFoto' src=./uploads/$realestate->fileToUpload>" .
-                "</img>" .
-                "<div class='info'>" .
-                "<p><b>'Cena: '</b>$$realestate->cena</p>" .
-                "<p><b>'Lokalita: '</b>$$realestate->lokalita</p>" .
-                "<p><b>'Typ nemovitosti: '</b>$$realestate->typ</p>" .
-                "<p><b>'Plocha: '</b>$$realestate->plocha 'm2' </p>" .
-                "</div>" .
-                "<div class='popis'>" .
-                $realestate->popis .
-                "</div>" .
-                "</div>";
-        }
-        ?>
+            foreach ($realestates as $realestate) {
+                echo "<div class='realestate'>" .
+                    "<div class='realestate-head'>" .
+                    "<h2>$realestate->nadpis</h2>" .
+                    "</div>" .
+                    "<img class='mainFoto' src=./uploads/$realestate->fileToUpload>" .
+                    "</img>" .
+                    "<div class='info'>" .
+                    "<p><b>'Cena: '</b>$$realestate->cena</p>" .
+                    "<p><b>'Lokalita: '</b>$$realestate->lokalita</p>" .
+                    "<p><b>'Typ nemovitosti: '</b>$$realestate->typ</p>" .
+                    "<p><b>'Plocha: '</b>$$realestate->plocha 'm2' </p>" .
+                    "</div>" .
+                    "<div class='popis'>" .
+                    $realestate->popis .
+                    "</div>" .
+                    "</div>";
+            }
+            ?>
+        </div>
+
     </div>
-
 
     <?php
     include "footer.php"

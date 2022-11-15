@@ -1,4 +1,4 @@
-<nav>
+<nav class="nav_for_signer">
     <?php
 
 
