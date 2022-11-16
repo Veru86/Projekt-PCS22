@@ -26,7 +26,7 @@ session_start();
             <div class="text">
                 Prodej nemovitosti je pro většinu lidí největší obchod v jejich životě. Věřím, že výběr správného obchodního partnera - zprostředkovatele je tedy nesmírně důležitý.
             </div>
-            <a href="contactform.php" class="button">Domluvit schůzku</a>
+            <a href="contactform.php" class="myButton">Domluvit schůzku</a>
             <div class="social">
                 <a href="https://www.facebook.com/kopicovap" class="socialitem"><img src="./img/facebook.png" alt="ikona Facebook"></a>
                 <a href="mailto: kopicovap@mmreality.cz" class="socialitem envelope"><img src="./img/envelope.png" alt="ikona email"></a>

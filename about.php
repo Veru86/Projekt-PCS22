@@ -36,7 +36,7 @@
                 </ul>
             </div>
             <div>
-                <a href="contact.php" class="button">Domluvit schůzku</a>
+                <a href="contact.php" class="myButton">Domluvit schůzku</a>
                 <div class="social">
                     <a href="https://www.facebook.com/kopicovap" class="socialitem"><img src="./img/facebook.png" alt="ikona Facebook"></a>
                     <a href="mailto: kopicovap@mmreality.cz" class="socialitem envelope"><img src="./img/envelope.png" alt="ikona email"></a>

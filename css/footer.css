@@ -4,13 +4,13 @@ footer{
   text-align: center;
   background-color: #1D5902;
   color: white;
-  padding: 1%;
   display: flex;
+  padding: 0 10%;
   width: 100%;
 }
 
 footer div {
-  flex-basis: 85%;
+  flex-basis: 65%;
   margin-top: 8px;
 }
 
@@ -23,3 +23,7 @@ footer div {
   border-radius: 5px;
   flex-basis: 15%;
 }
+
+/* .footer{
+  padding: 0 10%;
+} */

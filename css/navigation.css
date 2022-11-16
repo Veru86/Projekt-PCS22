@@ -30,8 +30,7 @@ header{
 }
 
 .telefon,
-.email,
-form {
+.email {
     flex-grow: 1;
     text-align: center;
     font-size: 17px;
@@ -39,15 +38,12 @@ form {
 }
 
 /*Navigation*/ /* do budoucna vytvořit burger menu*/
-nav{
+.nav_for_all{
     display: flex;
     background-color: #72A603;
     margin: 0;
-  }
-
-.nav_for_all{
     padding: 0 10%;
-}
+  }
   
 .navitem{
     color: white;
@@ -57,14 +53,21 @@ nav{
     text-decoration: none;
 }
   
-nav a:hover,
-nav a:focus,
-nav a:active {
+.nav_for_all a:hover,
+.nav_for_all a:focus,
+.nav_for_all a:active {
     background-color: #1D5902;
 }
 
 .nav_for_signer{
     background-color: #F2ECE4;
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav_for_signer_item{
+    flex-basis: 35px;
 }
 /* media query*/
 @media (min-width:650px){
