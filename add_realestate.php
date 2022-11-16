@@ -19,7 +19,7 @@ session_start();
     include "navigation.php"
     ?>
     <div class="add-realestate-wrapper">
-        <form action="./helpers/check_add_realestate.php" method="post">
+        <form action="./helpers/check_add_realestate.php" method="post" enctype="multipart/form-data">
             <label for="nadpis">Nadpis nemovitosti:</label>
             <textarea id="nadpis" name="nadpis"></textarea> <br />
             <label for="cena">Cena:</label>
@@ -32,11 +32,10 @@ session_start();
             <textarea id="plocha" name="plocha"></textarea> <br />
             <label for="popis">Popis nemovitosti:</label>
             <textarea id="popis" name="popis"></textarea> <br />
+            <label for="fileToUpload">Vyber hlavní fotku nemovitosti</label>
+            <input type="file" name="fileToUpload" id="fileToUpload" />
+
             <input class="primary-button" type="submit" value="Vložit nemovitost" name="submit">
-            <form action="./helpers/upload.php" method="post" enctype="multipart/form-data">
-                <label for="fileToUpload">Vyber hlavní fotku nemovitosti</label>
-                <input type="file" name="fileToUpload" id="fileToUpload" />
-            </form>
 
 
         </form>

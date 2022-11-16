@@ -38,7 +38,7 @@ class Realestates implements IRealestate
             $realestate->typ = $row["TypNemovitosti"];
             $realestate->plocha = $row["Plocha"];
             $realestate->popis = $row["Popis"];
-            $realestate->popis = $row["fileToUpload"];
+            $realestate->fileToUpload = $row["fileToUpload"];
             $realestate->dateAdded = $row["DateAdded"];
             $realestate->userFullName = $this->auth->get_user_name($row["UserId"]);
             array_push($realestates, $realestate);

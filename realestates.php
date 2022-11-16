@@ -48,7 +48,7 @@ session_start();
 
             $realestateDb = new Realestates($connection);
             $realestates = $realestateDb->get_all_realestates();
-
+            var_dump($realestates);
             foreach ($realestates as $realestate) {
                 echo "<div class='realestate'>" .
                     "<div class='realestate-head'>" .
