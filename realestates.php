@@ -39,7 +39,7 @@ session_start();
     include "navigation_for_signer.php"
     ?>
 
-    <div class="main">
+    <div class="main_realestates">
         <h1>Nemovitosti v mé nabídce</h1>
         <div class="realestates-wrapper">
             <?php
@@ -48,22 +48,26 @@ session_start();
 
             $realestateDb = new Realestates($connection);
             $realestates = $realestateDb->get_all_realestates();
-            var_dump($realestates);
             foreach ($realestates as $realestate) {
                 echo "<div class='realestate'>" .
-                    "<div class='realestate-head'>" .
+                    "<div class='realestate_head'>" .
                     "<h2>$realestate->nadpis</h2>" .
                     "</div>" .
+                    "<div class='realestate_full'>" .
                     "<img class='mainFoto' src=./uploads/$realestate->fileToUpload>" .
                     "</img>" .
+                    "<div class='info_full'>" .
                     "<div class='info'>" .
-                    "<p><b>'Cena: '</b>$$realestate->cena</p>" .
-                    "<p><b>'Lokalita: '</b>$$realestate->lokalita</p>" .
-                    "<p><b>'Typ nemovitosti: '</b>$$realestate->typ</p>" .
-                    "<p><b>'Plocha: '</b>$$realestate->plocha 'm2' </p>" .
+                    "<p><b>Cena: </b>$realestate->cena Kč</p>" .
+                    "<p><b>Lokalita: </b>$realestate->lokalita</p>" .
+                    "<p><b>Typ nemovitosti: </b>$realestate->typ</p>" .
+                    "<p><b>Plocha: </b>$realestate->plocha m2 </p>" .
                     "</div>" .
                     "<div class='popis'>" .
+                    "<h3>Popis nemovitosti:</h3>" .
                     $realestate->popis .
+                    "</div>" .
+                    "</div>" .
                     "</div>" .
                     "</div>";
             }

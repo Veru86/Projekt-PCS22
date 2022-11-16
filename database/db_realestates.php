@@ -31,7 +31,7 @@ class Realestates implements IRealestate
         $realestates = [];
 
         while ($row = $res->fetch_assoc()) {
-            $realestate = new Realestate(); //tady popravdě nevím co s tím :) 
+            $realestate = new Realestate();
             $realestate->nadpis = $row["Nadpis"];
             $realestate->cena = $row["Cena"];
             $realestate->lokalita = $row["Lokalita"];

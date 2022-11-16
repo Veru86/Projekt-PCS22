@@ -5,7 +5,7 @@
         <div class="email">kopicovapetra@mmreality.cz</div>
     </div>
 </header>
-<nav>
+<nav class="nav_for_all">
     <a href="index.php" class="navitem">Úvod</a>
     <a href="about.php" class="navitem">O mně</a>
     <a href="realestates.php" class="navitem">Nemovitosti</a>
