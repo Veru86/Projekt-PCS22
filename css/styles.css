@@ -29,7 +29,7 @@ body {
     padding: 5px 20px;
 }
 
-.button{
+/* .button{
     display: block;
     text-decoration: none;
     margin: 0 auto;
@@ -47,7 +47,7 @@ body {
 .button:focus,
 .button:active {
     background-color: #1D5902;
-}
+} */
 
 .social {
     width: 20%;

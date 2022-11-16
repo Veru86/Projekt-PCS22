@@ -4,6 +4,7 @@ main{
 
 .contact{
     margin: 2% 0;
+    line-height: 1.35rem;
 }
 
 h2,
@@ -12,6 +13,13 @@ a {
     margin: 0;
 }
 
+p{
+    margin-top: 0.5rem;
+}
 .pobocka{
     margin-top: 15px;
+}
+
+.mapouter{
+    margin: 5% 0;
 }

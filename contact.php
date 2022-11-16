@@ -37,7 +37,30 @@
                 <p>Provozní doba</p>
                 <p><b>PO - ČT</b>: 9:00 - 12:00; 13:00 - 17:00</p>
                 <p><b>PÁ</b>: 9:00 - 12:00; 13:00 - 16:00</p>
-                <a href="https://www.google.com/maps?key=AIzaSyBQgtMDC8l8drh-IYTwsL2C_jBfcssHvJE&q=Beckovsk%C3%A9ho+2045,+">Zobrazit na mapě</a>
+            </div>
+
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=beckovsk%C3%A9ho%202045&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <a href="https://123movies-to.org"></a><br>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 300px;
+                            width: 400px;
+                        }
+                    </style>
+                    <a href="https://www.embedgooglemap.net"></a>
+                    <style>
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 300px;
+                            width: 400px;
+                        }
+                    </style>
+                </div>
             </div>
         </div>
     </main>
