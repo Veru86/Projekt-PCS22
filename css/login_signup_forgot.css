@@ -6,16 +6,14 @@ light-green: #CDF27E
 backgroud: #F2ECE4
  */
 
-.login_signup_forgot  {
-    width: 300px;
+ .login_signup_forgot  {
+    width: 500px;
     padding: 15px auto;
     margin: 10% 35%;
     background-color: #CDF27E;
     border-radius: 15px;
     padding: 15px 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
 }
 
 .login_signup_forgot h3 {
@@ -42,4 +40,20 @@ backgroud: #F2ECE4
 .login_signup_forgotm a:active {
     background-color: #1D5902;
     color: white;
+} 
+
+.form{
+    display: grid;
+    grid-template-columns: 130px 10px 1fr;
 }
+
+.form label {
+    grid-column: 1 / 2;
+    text-align: right;
+}
+
+.form input,
+.form button {
+    grid-column: 3 / 4;
+}
+

@@ -18,10 +18,13 @@
     ?>
     <div class="login_signup_forgot">
         <h3>Přihlásit se</h3>
-        <form action="./helpers/check_login.php" method="post">
-            Email: <input type="email" name="username"><br><br>
-            Heslo: <input type="password" name="password"><br><br>
-            <input type="checkbox" name="remember" value="1"> Zapamatovat si mě<br><br>
+        <form class="form" action="./helpers/check_login.php" method="post">
+            <label for="username">Email:</label>
+            <input type="email" name="username" id="username">
+            <label for="password">Heslo: </label>
+            <input type="password" name="password" id="password">
+            <label for="remember" id="remember_text">Zapamatovat si mě</label>
+            <input type="checkbox" name="remember" value="1" id="remember">
             <input type="submit" value="Přihlásit se" name="submit">
         </form><br>
         <a href="./signup.php">Zaregistrovat se</a>

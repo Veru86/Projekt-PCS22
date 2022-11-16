@@ -19,19 +19,19 @@ session_start();
     include "navigation.php"
     ?>
     <div class="add-realestate-wrapper">
-        <form action="./helpers/check_add_realestate.php" method="post" enctype="multipart/form-data">
+        <form class="form" action="./helpers/check_add_realestate.php" method="post" enctype="multipart/form-data">
             <label for="nadpis">Nadpis nemovitosti:</label>
-            <textarea id="nadpis" name="nadpis"></textarea> <br />
+            <textarea id="nadpis" name="nadpis"></textarea>
             <label for="cena">Cena:</label>
-            <textarea id="cena" name="cena"></textarea> <br />
+            <textarea id="cena" name="cena"></textarea>
             <label for="lokalita">Lokalita:</label>
-            <textarea id="lokalita" name="lokalita"></textarea> <br />
+            <textarea id="lokalita" name="lokalita"></textarea>
             <label for="typNemovitosti">Typ nemovitosti:</label>
-            <textarea id="typNemovitosti" name="typNemovitosti"></textarea> <br />
+            <textarea id="typNemovitosti" name="typNemovitosti"></textarea>
             <label for="plocha">Plocha:</label>
-            <textarea id="plocha" name="plocha"></textarea> <br />
+            <textarea id="plocha" name="plocha"></textarea>
             <label for="popis">Popis nemovitosti:</label>
-            <textarea id="popis" name="popis"></textarea> <br />
+            <textarea id="popis" name="popis"></textarea>
             <label for="fileToUpload">Vyber hlavní fotku nemovitosti</label>
             <input type="file" name="fileToUpload" id="fileToUpload" />
 

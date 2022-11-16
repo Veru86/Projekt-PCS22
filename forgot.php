@@ -15,12 +15,15 @@
     ?>
     <div class="login_signup_forgot">
         <h3>Obnovit heslo</h3>
-        <form action="./helpers/update_password.php" method="post">
-            Email: <input type="email" name="username" id=""><br><br>
-            Nove heslo: <input type="password" name="new_password" id=""><br><br>
-            Potvrdit heslo: <input type="password" name="confirm_new_password" id=""><br><br>
+        <form class="form" action="./helpers/update_password.php" method="post">
+            <label for="username">Email:</label>
+            <input type="email" name="username" id="username">
+            <label for="password">Nové heslo:</label>
+            <input type="password" name="new_password" id="password">
+            <label for="password">Potvrdit heslo:</label>
+            <input type="password" name="confirm_new_password" id="password">
             <input type="submit" value="Obnovit heslo" name="update_password">
-        </form><br><br>
+        </form>
         <a href="./login.php">Zpět na přihlášení</a>
     </div>
 </body>
