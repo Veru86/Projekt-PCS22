@@ -1,6 +1,7 @@
 .main_realestates{
     padding: 0 10%;
 }
+
 .realestates-wrapper{
     margin-top: 20px;
     width: 100%;
@@ -13,7 +14,7 @@
     border: grey 1px solid;
     border-radius: 4px;
     margin-bottom: 20px;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: #CDF27E ;
 }
 
