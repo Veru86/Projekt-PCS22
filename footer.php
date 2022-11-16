@@ -1,5 +1,4 @@
  <footer>
-     <div>&copy; 2022, Reality Kopicová </div>
-     <!-- přidat php 2022 - až aktuální rok copyright -->
+     <div>&copy; 2022-<?php echo date("Y"); ?>, Reality Kopicová </div>
      <a class="footer_a" href="login.php">Přihlášení makléře</a>
  </footer>
