@@ -10,6 +10,8 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/login_signup_forgot.css">
+    <link rel="stylesheet" href="./css/add_realestate.css">
     <link rel="stylesheet" href="./css/footer.css">
     <title>Přidat nemovitost</title>
 </head>

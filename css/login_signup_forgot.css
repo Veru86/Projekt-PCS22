@@ -44,7 +44,7 @@ backgroud: #F2ECE4
 
 .form{
     display: grid;
-    grid-template-columns: 130px 10px 1fr;
+    grid-template-columns: 130px 15px 1fr;
 }
 
 .form label {
@@ -53,7 +53,8 @@ backgroud: #F2ECE4
 }
 
 .form input,
-.form button {
+.form button,
+.form textarea {
     grid-column: 3 / 4;
 }
 
